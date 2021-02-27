@@ -1,4 +1,4 @@
-# plantui_sid
+# Plant Shop UI Flutter
 
 A new Flutter application.
 
