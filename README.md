@@ -1,6 +1,6 @@
 # Plant Shop UI Flutter
 
-A new Flutter application.
+A Plant Shop UI using Flutter and dart
 
 ## Getting Started
 
