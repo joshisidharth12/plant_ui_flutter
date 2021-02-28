@@ -2,6 +2,15 @@
 
 A Plant Shop UI using Flutter and dart
 
+Static First Screen :
+
+<img src="ScreenShots/static.png" width = "270">
+
+After scrolling Screen :
+
+<img src="ScreenShots/afterscroll.png" width = "270">
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
