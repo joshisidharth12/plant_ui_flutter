@@ -1,5 +1,17 @@
 import 'package:flutter/material.dart';
 
+
+/*This is to verify branching
+This is to verify branching
+This is to verify branching
+This is to verify branching
+This is to verify branching
+This is to verify branching
+This is to verify branching
+
+
+
+*/
 class PlantList extends StatefulWidget {
   @override
   _PlantListState createState() => _PlantListState();
@@ -8,14 +20,9 @@ class PlantList extends StatefulWidget {
 class _PlantListState extends State<PlantList> {
   ScrollController _scrollController;
 
-  List allDescription = [
-    'Aloe vera is a succulent plant species of the genus Aloe. An evergreen perennial, '
-        'it originates from the Arabian Peninsula, but grows wild in tropical, semi-tropical, '
-        'and arid climates around the world. It is cultivated for agricultural and medicinal uses.',
-    'Ficus benjamina, commonly known as weeping fig, benjamin fig or ficus tree,'
-        ' and often sold in stores as just ficus, is a species of flowering plant '
-        'in the family Moraceae, native to Asia and Australia. '
-        'It is the official tree of Bangkok.',
+  List<String> allDescription = [
+    'Aloe vera is a succulent plant species of the genus Aloe. An evergreen perennial, it originates from the Arabian Peninsula, but grows wild in tropical, semi-tropical, and arid climates around the world. It is cultivated for agricultural and medicinal uses.',
+    'Ficus benjamina, commonly known as weeping fig, benjamin fig or ficus tree, and often sold in stores as just ficus, is a species of flowering plant in the family Moraceae, native to Asia and Australia. It is the official tree of Bangkok.',
     'Third'
   ];
 
@@ -53,9 +60,8 @@ class _PlantListState extends State<PlantList> {
               getPlantCard(
                   'assets/images/aloevera.png', '25', 'OUTDOOR', 'Aloe Vera'),
               getPlantCard('assets/images/ficus.png', '25', 'INDOOR', 'Ficus'),
-              getPlantCard('assets/images/whiteplant.png', '25', 'OUTDOOR', 'White Plant'),
-              getPlantCard('assets/images/flowerplant.png', '25', 'OUTDOOR', 'Flower Plant'),
-              getPlantCard('assets/images/smallplant.png', '25', 'INDOOR', 'Small Plant'),
+              getPlantCard('assets/images/whiteplant.png', '25', 'OUTDOOR',
+                  'White Plant'),
               SizedBox(
                 width: 10.0,
               )
@@ -81,7 +87,7 @@ class _PlantListState extends State<PlantList> {
           child: Text(
             description,
             style: TextStyle(
-                fontFamily: "Montserrant regular",
+                fontFamily: "Montserrant Bold",
                 fontSize: 18.0,
                 fontWeight: FontWeight.w500),
           ),
@@ -101,7 +107,7 @@ class _PlantListState extends State<PlantList> {
           child: Container(
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: Color(0xFF336BE0)),
+                color: Color(0xFF399063)),
             height: 250.0,
             width: 225.0,
             child: Column(
@@ -120,7 +126,7 @@ class _PlantListState extends State<PlantList> {
                               fontFamily: 'Montserrant regular',
                               fontSize: 18.0,
                               fontWeight: FontWeight.w600,
-                              color: Color(0xFF7EA4F1)),
+                              color: Color(0xFF8AC7A4)),
                         ),
                         Text(
                           '\$' + price,
@@ -138,7 +144,6 @@ class _PlantListState extends State<PlantList> {
                   ],
                 ),
                 Image(
-
                   image: AssetImage(imgPath),
                   height: 160.0,
                 ),
@@ -156,7 +161,7 @@ class _PlantListState extends State<PlantList> {
                               fontFamily: 'Montserrant Bold',
                               fontSize: 13.0,
                               fontWeight: FontWeight.w500,
-                              color: Color(0xFF7EA4F1)),
+                              color: Color(0xFF8AC7A4)),
                         ),
                         Text(
                           plantName,
@@ -184,12 +189,12 @@ class _PlantListState extends State<PlantList> {
                       width: 30.0,
                       decoration: BoxDecoration(
                           border: Border.all(
-                            color: Color(0xFF7EA4F1),
+                            color: Color(0xFF8AC7A4),
                             style: BorderStyle.solid,
                             width: 0.5,
                           ),
                           borderRadius: BorderRadius.circular(5.0),
-                          color: Color(0xFF336BE0)),
+                          color: Color(0xFF399063)),
                       child: Icon(
                         Icons.wb_sunny,
                         color: Colors.white.withOpacity(0.4),
@@ -206,12 +211,12 @@ class _PlantListState extends State<PlantList> {
                       width: 30.0,
                       decoration: BoxDecoration(
                           border: Border.all(
-                            color: Color(0xFF7EA4F1),
+                            color: Color(0xFF8AC7A4),
                             style: BorderStyle.solid,
                             width: 0.5,
                           ),
                           borderRadius: BorderRadius.circular(5.0),
-                          color: Color(0xFF336BE0)),
+                          color: Color(0xFF399063)),
                       child: Icon(
                         Icons.favorite_border,
                         color: Colors.white.withOpacity(0.4),
@@ -228,12 +233,12 @@ class _PlantListState extends State<PlantList> {
                       width: 30.0,
                       decoration: BoxDecoration(
                           border: Border.all(
-                            color: Color(0xFF7EA4F1),
+                            color: Color(0xFF8AC7A4),
                             style: BorderStyle.solid,
                             width: 0.5,
                           ),
                           borderRadius: BorderRadius.circular(5.0),
-                          color: Color(0xFF336BE0)),
+                          color: Color(0xFF399063)),
                       child: Icon(
                         Icons.perm_identity,
                         color: Colors.white.withOpacity(0.4),
@@ -250,7 +255,7 @@ class _PlantListState extends State<PlantList> {
                       child: Container(
                         height: 30.0,
                         width: 30.0,
-                        decoration: BoxDecoration(color: Color(0xFF336BE0)),
+                        decoration: BoxDecoration(color: Color(0xFF399063)),
                         child: Icon(
                           Icons.help_outline,
                           color: Colors.white.withOpacity(0.4),
